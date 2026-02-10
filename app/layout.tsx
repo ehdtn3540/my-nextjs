@@ -26,6 +26,9 @@ export default function RootLayout({
               <li style={{ marginTop: "10px" }}>
                 <Link href="/mini-game">🧪 Mini Game</Link>
               </li>
+              <li style={{ marginTop: "10px" }}>
+                <Link href="/my-page">🧪 My Page</Link>
+              </li>
             </ul>
           </nav>
 
