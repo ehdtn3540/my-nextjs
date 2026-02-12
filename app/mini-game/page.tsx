@@ -4,7 +4,9 @@ import { useState } from "react";
 
 export default function MiniGamePage() {
   const [input, setInput] = useState("");
-  const [result, setResult] = useState<"UP" | "DOWN" | "CORRECT" | "">("");
+  // const [result, setResult] = useState<"UP" | "DOWN" | "CORRECT" | "">("");
+  type GameResult = "UP" | "DOWN" | "CORRECT"|""; // 타입의 재사용성 증가
+  const [result, setResult] = useState<GameResult>("");
   const [message, setMessage] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
