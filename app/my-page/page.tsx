@@ -45,13 +45,11 @@ function ApiTester({ title, endpoint }: { title: string; endpoint: string }) {
 export default function TestPage() {
   return (
     <div style={{ padding: "20px" }}>
-      <h1>연결 테스트 페이지</h1>
+      <h1>FastAPI 연결 테스트</h1>
+      <ApiTester title="Test" endpoint="http://localhost:8000/api/test" />
       
-      {/* 기존 API */}
-      <ApiTester title="테스트 API" endpoint="http://localhost:8000/api/test" />
-      
-      {/* 새로운 API (여기에 추가) */}
-      <ApiTester title="jsonplaceholder API" endpoint="http://localhost:8000/api/jsonplaceholder" />
+      <h1>JsonPlaceHolder API</h1>
+      <ApiTester title="Posts" endpoint="http://localhost:8000/api/posts" />
     </div>
   );
 }
