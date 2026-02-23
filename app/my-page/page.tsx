@@ -49,7 +49,10 @@ export default function TestPage() {
       <ApiTester title="Test" endpoint="http://localhost:8000/api/test" />
       
       <h1>JsonPlaceHolder API</h1>
+      {/* 전체 게시글 */}
       <ApiTester title="Posts" endpoint="http://localhost:8000/api/posts" />
+      {/* 전체 댓글 */}
+      <ApiTester title="Comments" endpoint="http://localhost:8000/api/comments" />
     </div>
   );
 }
