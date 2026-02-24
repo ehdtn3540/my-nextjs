@@ -53,6 +53,8 @@ export default function TestPage() {
       <ApiTester title="Posts" endpoint="http://localhost:8000/api/posts" />
       {/* 전체 댓글 */}
       <ApiTester title="Comments" endpoint="http://localhost:8000/api/comments" />
+      {/* 전체 사용자 */}
+      <ApiTester title="Users" endpoint="http://localhost:8000/api/users" />
     </div>
   );
 }
