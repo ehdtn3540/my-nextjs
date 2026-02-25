@@ -37,6 +37,26 @@ function ApiTester({ title, endpoint }: { title: string; endpoint: string }) {
             }}
           />
       )}
+      {data && (
+        <table style={{ width: "100%", marginTop: "20px", borderCollapse: "collapse", fontSize: "14px" }}>
+          <thead>
+            <tr style={{ background: "#f4f4f4", borderBottom: "2px solid #ccc" }}>
+              <th style={{ padding: "8px", textAlign: "left" }}>ID</th>
+              <th style={{ padding: "8px", textAlign: "left" }}>Title</th>
+              <th style={{ padding: "8px", textAlign: "left" }}>Body</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data.map((item) => (
+              <tr key={item.id} style={{ borderBottom: "1px solid #eee" }}>
+                <td style={{ padding: "8px" }}>{item.id}</td>
+                <td style={{ padding: "8px" }}>{item.title}</td>
+                <td style={{ padding: "8px", color: "#666" }}>{item.body.slice(0, 50)}...</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
     </div>
   );
 }
