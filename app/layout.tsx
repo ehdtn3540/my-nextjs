@@ -30,7 +30,7 @@ export default function RootLayout({
           <nav className="side-nav"> {/* 인라인 스타일을 제거하고 클래스만 남김 */}
             <h3>Menu</h3>
             <ul style={{ listStyle: "none", padding: 0 }}>
-              <li><Link href="/">🏠 Home</Link></li>
+              <li><Link href="/home">🏠 Home</Link></li>
               <li style={{ marginTop: "10px" }}><Link href="/mini-game">🧪 Mini Game</Link></li>
               <li style={{ marginTop: "10px" }}><Link href="/my-page">🧪 My Page</Link></li>
             </ul>
