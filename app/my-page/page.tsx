@@ -37,6 +37,7 @@ function ApiTester({ title, endpoint }: { title: string; endpoint: string }) {
             }}
           />
       )}
+{/*
       {data && (
         <table style={{ width: "100%", marginTop: "20px", borderCollapse: "collapse", fontSize: "14px" }}>
           <thead>
@@ -57,6 +58,7 @@ function ApiTester({ title, endpoint }: { title: string; endpoint: string }) {
           </tbody>
         </table>
       )}
+*/}
     </div>
   );
 }
@@ -65,9 +67,6 @@ function ApiTester({ title, endpoint }: { title: string; endpoint: string }) {
 export default function TestPage() {
   return (
     <div style={{ padding: "20px" }}>
-      <h1>FastAPI 연결 테스트</h1>
-      <ApiTester title="Test" endpoint="http://localhost:8000/api/test" />
-      
       <h1>JsonPlaceHolder API</h1>
       {/* 전체 게시글 */}
       <ApiTester title="Posts" endpoint="http://localhost:8000/api/posts" />
