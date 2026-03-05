@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 // 1. 공통 컴포넌트 정의
-function ApiTester({ title, endpoint }: { title: string; endpoint: string }) {
+function JsonPlaceHolderAPI({ title, endpoint }: { title: string; endpoint: string }) {
   const [data, setData] = useState<any>(null);
 
   const checkConnection = async () => {
@@ -69,11 +69,11 @@ export default function TestPage() {
     <div style={{ padding: "20px" }}>
       <h1>JsonPlaceHolder API</h1>
       {/* 전체 게시글 */}
-      <ApiTester title="Posts" endpoint="http://localhost:8000/api/posts" />
+      <JsonPlaceHolderAPI title="Posts" endpoint="http://localhost:8000/jsonplaceholder/posts" />
       {/* 전체 댓글 */}
-      <ApiTester title="Comments" endpoint="http://localhost:8000/api/comments" />
+      <JsonPlaceHolderAPI title="Comments" endpoint="http://localhost:8000/jsonplaceholder/comments" />
       {/* 전체 사용자 */}
-      <ApiTester title="Users" endpoint="http://localhost:8000/api/users" />
+      <JsonPlaceHolderAPI title="Users" endpoint="http://localhost:8000/jsonplaceholder/users" />
     </div>
   );
 }
