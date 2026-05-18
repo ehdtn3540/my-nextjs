@@ -33,6 +33,7 @@ export default function RootLayout({
               <li><Link href="/home">Home</Link></li>
               <li style={{ marginTop: "10px" }}><Link href="/mini-game">Mini Game</Link></li>
               <li style={{ marginTop: "10px" }}><Link href="/jsonplaceholder">JsonPlaceHolder</Link></li>
+              <li style={{ marginTop: "10px" }}><Link href="/stock">stock</Link></li>
             </ul>
           </nav>
 
