@@ -32,6 +32,7 @@ export default function RootLayout({
             <ul style={{ listStyle: "none", padding: 0 }}>
               <li><Link href="/home">Home</Link></li>
               <li style={{ marginTop: "10px" }}><Link href="/stock">Stock</Link></li>
+              <li style={{ marginTop: "10px" }}><Link href="/weather">Weather</Link></li>
             </ul>
           </nav>
 
